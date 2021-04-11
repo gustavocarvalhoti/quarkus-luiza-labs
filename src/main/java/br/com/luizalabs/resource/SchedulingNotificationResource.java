@@ -38,6 +38,36 @@ public class SchedulingNotificationResource {
         });
     }
 
+    @PATCH
+    @Path("/cancel/{id}")
+    @PermitAll
+    @Transactional
+    @Consumes(MediaType.APPLICATION_JSON)
+    public void cancel(@PathParam(value = "id") Long id) {
+        SchedulingNotification notification = schedulingNotificationService.findById(id);
+        if (notification == null) {
+            throw new RuntimeException("This notification is invalid.");
+        }
+
+        notification.setStatus("canceled");
+        schedulingNotificationService.persist(notification);
+    }
+
+    @PATCH
+    @Path("/send/{id}")
+    @PermitAll
+    @Transactional
+    @Consumes(MediaType.APPLICATION_JSON)
+    public void send(@PathParam(value = "id") Long id) {
+        SchedulingNotification notification = schedulingNotificationService.findById(id);
+        if (notification == null || notification.getStatus().equals("canceled")) {
+            throw new RuntimeException("This notification is invalid or was canceled.");
+        }
+
+        notification.setStatus("send");
+        schedulingNotificationService.persist(notification);
+    }
+
     @GET
     @PermitAll
     @Produces(MediaType.APPLICATION_JSON)

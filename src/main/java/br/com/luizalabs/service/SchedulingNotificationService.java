@@ -17,6 +17,10 @@ public class SchedulingNotificationService {
         schedulingNotificationRepository.persistAndFlush(schedulingNotification);
     }
 
+    public SchedulingNotification findById(Long id) {
+        return schedulingNotificationRepository.findById(id);
+    }
+
     public List<SchedulingNotification> listAll() {
         return schedulingNotificationRepository.listAll();
     }
