@@ -111,19 +111,19 @@ Instalar os softwares abaixo:
 
 ##### Apontar para o Java do GraalVM
 
-![img.png](img.png)
+![img.png](.github/img.png)
 
 ##### Iniciar a aplicação
 
-![img_1.png](img_1.png)
+![img_1.png](.github/img_1.png)
 
 ##### Utilizei o Maven 3.6.3 para executar todos os comandos
 
-![img_3.png](img_3.png)
+![img_3.png](.github/img_3.png)
 
 ##### Gerar a imagem compilada pelo Graal VM, fica muito mais rápido o start do servidor
 
-![img_2.png](img_2.png)
+![img_2.png](.github/img_2.png)
 
 
 <br>
