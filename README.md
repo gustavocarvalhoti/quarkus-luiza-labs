@@ -29,7 +29,37 @@
 
 ## :bookmark: Sobre
 
-**luizalabs-api** é uma plataforma de comunicação.
+**luizalabs-api** é uma plataforma de comunicação. <br><br>
+Endpoints disponíveis: <br>
+Get: <br>
+http://localhost:8080 <br>
+http://localhost:8080/scheduling-notification <br>
+
+Post:<br>
+http://localhost:8080/scheduling-notification
+
+````
+{
+   "status":"pending",
+   "sendDate":"2021-04-25 01:00:00",
+   "message":"TEM COISA BOA",
+   "type":"whatsapp",
+   "receivers":[
+      {
+         "name":"Marli",
+         "whatsapp":"+55 19991676181"
+      },
+		 {
+         "name":"Michelle",
+         "whatsapp":"+55 19991676181"
+      }
+   ]
+}
+````
+
+Patch:<br>
+http://localhost:8080/scheduling-notification/cancel/{id} <br>
+http://localhost:8080/scheduling-notification/send/{id}
 
 <br>
 
