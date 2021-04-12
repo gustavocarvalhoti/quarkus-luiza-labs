@@ -143,6 +143,10 @@ Instalar os softwares abaixo:
 
 ![img.png](.github/img.png)
 
+##### Alterar o application.properties
+
+![img.png](.github/img_4.png)
+
 ##### Iniciar a aplicação
 
 ![img_1.png](.github/img_1.png)
