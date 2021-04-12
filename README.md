@@ -15,11 +15,11 @@
 <strong>
 <br>
 <p align="center">
-  <a href="#bookmark-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#computer-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#wrench-tools">Tools</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#package-installation">Installation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">License</a>
+  <a href="#bookmark">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#computer">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#wrench">Tools</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#package">Installation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo">License</a>
 </p>
 </strong>
 <br>
@@ -77,7 +77,7 @@ Instalar os softwares abaixo:
 
 <br>
 
-### :arrow_forward:    **Executando a aplicação**
+### :arrow_forward: **Executando a aplicação**
 
 - :package: API
 
@@ -86,7 +86,7 @@ Instalar os softwares abaixo:
   $ docker-compose up
 ```
 
-### :arrow_forward:    **Executando a aplicação no modo desenvolvedor**
+### :arrow_forward: **Executando a aplicação no modo desenvolvedor**
 
 - :package: API
 
