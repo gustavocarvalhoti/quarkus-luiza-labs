@@ -2,7 +2,10 @@ version: '3'
 
 services:
     luizalabs-api:
-        image: gustavocarvalhoti/luizalabs-api:1
+        image: quarkus/luizalabs-api:14
+        build:
+            context: ./
+            dockerfile: src/main/docker/Dockerfile.${QUARKUS_MODE:-jvm}
         environment:
             QUARKUS_DATASOURCE_URL: jdbc:mysql://mysql-luizalabs:3306/luizalabs?autoReconnect=true
         networks:
