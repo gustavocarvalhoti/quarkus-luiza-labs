@@ -37,6 +37,7 @@ public class SchedulingNotificationResource {
             SchedulingNotification notification = new SchedulingNotification(schedulingNotification);
             notification.setReceiverId(receiver.getId());
             notification.setCreatedAt(LocalDateTime.now());
+            notification.setStatus("pending");
             schedulingNotificationService.persist(notification);
         });
     }

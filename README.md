@@ -40,9 +40,8 @@ http://localhost:8080/scheduling-notification
 
 ````
 {
-   "status":"pending",
    "sendDate":"2021-04-25 01:00:00",
-   "message":"TEM COISA BOA",
+   "message":"SuperApp tá super - 24x mais frete gratis!",
    "type":"whatsapp",
    "receivers":[
       {

@@ -37,7 +37,6 @@ public class SchedulingNotificationTest {
     */
 
     private static String requestBodyPersist = "{\n" +
-            "       \"status\":\"pending\",\n" +
             "       \"sendDate\":\"2021-04-25 01:00:00\",\n" +
             "       \"message\":\"TESTE147852369\",\n" +
             "       \"type\":\"whatsapp\",\n" +
