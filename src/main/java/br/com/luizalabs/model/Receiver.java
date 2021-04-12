@@ -20,14 +20,6 @@ public class Receiver extends PanacheEntityBase implements Serializable {
     private String phone;
     private String whatsapp;
 
-    public Receiver() {
-    }
-
-    public Receiver(String name, String cpf) {
-        this.name = name;
-        this.cpf = cpf;
-    }
-
     public Long getId() {
         return id;
     }
