@@ -2,10 +2,9 @@
   Luiza Labs Api
 </h1>
 <p align="center">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/gustavocarvalhoti/quarkus-luiza-labs?color=15c3d6">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/gustavocarvalhoti/quarkus-luiza-labs?color=15c3d6"/>
   <a href="https://github.com/gustavocarvalhoti/quarkus-luiza-labs/commits/main">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gustavocarvalhoti/quarkus-luiza-labs?color=15c3d6">
-  <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-15c3d6?style=flat">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gustavocarvalhoti/quarkus-luiza-labs?color=15c3d6"/>
   </a>
  <br>
   <a href="https://www.linkedin.com/in/gustavocarvalho-ti/">
@@ -40,10 +39,15 @@
 - **[Java 11](https://www.oracle.com/br/java/technologies/javase-jdk11-downloads.html)**
 - **[GraalVM](https://www.graalvm.org/)**
 - **[Maven](https://maven.apache.org/)**
+- **[Quarkus Flyway](https://quarkus.io/)**
 - **[Docker](https://www.docker.com/)**
 - **[Docker Compose](https://docs.docker.com/compose/install/)**
 - **[Docker Hub](https://hub.docker.com/)**
 - **[MySQL](https://www.mysql.com/)**
+- **[Quarkus Resteasy](https://quarkus.io/)**
+- **[Quarkus Junit5 e Mokito](https://quarkus.io/)**
+- **[Rest Assured](https://quarkus.io/)**
+- **[Quarkus Panache](https://quarkus.io/)**
 
 <br>
 
@@ -62,10 +66,10 @@
 Instalar os softwares abaixo:
 
 - **[Git](https://git-scm.com/)**
-- **[GraalVM](https://www.graalvm.org/)**
 - **[Maven](https://maven.apache.org/)**
 - **[Docker](https://www.docker.com/)**
 - **[Docker Compose](https://docs.docker.com/compose/install/)**
+- **[GraalVM](https://www.graalvm.org/) (Somente no modo desenvolvedor)**
 
 <br>
 
