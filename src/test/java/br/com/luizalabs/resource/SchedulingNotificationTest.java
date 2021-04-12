@@ -26,11 +26,11 @@ public class SchedulingNotificationTest {
        "receivers":[
           {
              "name":"Marli",
-             "phone":"+55 19991676181"
+             "whatsapp":"+55 19991676181"
           },
              {
              "name":"Michelle",
-             "phone":"+55 19991676181"
+             "whatsapp":"+55 19991676181"
           }
        ]
     }
@@ -44,11 +44,11 @@ public class SchedulingNotificationTest {
             "       \"receivers\":[\n" +
             "          {\n" +
             "             \"name\":\"Marli\",\n" +
-            "             \"phone\":\"+55 19991676181\"\n" +
+            "             \"whatsapp\":\"+55 19991676181\"\n" +
             "          },\n" +
             "             {\n" +
             "             \"name\":\"Michelle\",\n" +
-            "             \"phone\":\"+55 19991676181\"\n" +
+            "             \"whatsapp\":\"+55 19991676181\"\n" +
             "          }\n" +
             "       ]\n" +
             "    }";

@@ -2,7 +2,7 @@ version: '3'
 
 services:
     luizalabs-api:
-        image: quarkus/luizalabs-api:11
+        image: quarkus/luizalabs-api:13
         build:
             context: ./
             dockerfile: src/main/docker/Dockerfile.${QUARKUS_MODE:-jvm}

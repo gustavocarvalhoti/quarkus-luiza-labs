@@ -26,8 +26,11 @@ public class SchedulingNotificationResource {
     @Transactional
     @Consumes(MediaType.APPLICATION_JSON)
     public void persist(SchedulingNotification schedulingNotification) {
+        List<Receiver> receivers = schedulingNotification.getReceivers();
+        validateTypeNotification(schedulingNotification, receivers);
+
         // Persist all Receivers
-        List<Receiver> receiverList = receiverService.persistAll(schedulingNotification.getReceivers());
+        List<Receiver> receiverList = receiverService.persistAll(receivers);
 
         // Persist all SchedulingNotification
         receiverList.stream().forEach(receiver -> {
@@ -78,5 +81,44 @@ public class SchedulingNotificationResource {
         });
 
         return result;
+    }
+
+    /**
+     * Validate Receivers by your notification type
+     */
+    private void validateTypeNotification(SchedulingNotification schedulingNotification, List<Receiver> receivers) {
+        receivers.stream().forEach(receiver -> {
+            if (receiver.getName() == null) {
+                throw new RuntimeException("This notification is invalid. Fill the name to continue.");
+            }
+        });
+
+        if (schedulingNotification.getType().equals("whatsapp")) {
+            receivers.stream().forEach(receiver -> {
+                if (receiver.getWhatsapp() == null) {
+                    throw new RuntimeException("This notification is invalid. Fill the whatsapp to continue.");
+                }
+            });
+        } else if (schedulingNotification.getType().equals("email")) {
+            receivers.stream().forEach(receiver -> {
+                if (receiver.getEmail() == null) {
+                    throw new RuntimeException("This notification is invalid. Fill the email to continue.");
+                }
+            });
+        } else if (schedulingNotification.getType().equals("sms")) {
+            receivers.stream().forEach(receiver -> {
+                if (receiver.getPhone() == null) {
+                    throw new RuntimeException("This notification is invalid. Fill the phone to continue.");
+                }
+            });
+        } else if (schedulingNotification.getType().equals("push")) {
+            receivers.stream().forEach(receiver -> {
+                if (receiver.getCpf() == null) {
+                    throw new RuntimeException("This notification is invalid. Fill the cpf to continue.");
+                }
+            });
+        } else {
+            throw new RuntimeException("The type " + schedulingNotification.getType() + " is invalid, select: [whatsapp, email, sms, push]");
+        }
     }
 }
