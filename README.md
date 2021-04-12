@@ -96,8 +96,35 @@ Instalar os softwares abaixo:
 
 ```sh
   $ cd quarkus-luiza-labs
-  $ docker-compose up
 ```
+
+#### Configurando no IntelliJ
+
+##### Se você rodou o docker compose antes ele criou o container do MySQL - quarkusluizalabs_mysql-luizalabs_1
+
+```sh
+  # Verificar
+  $ docker ps -a
+  # Se não possui vc pode rodar o seguinte comando:
+  $ docker run --name quarkusluizalabs_mysql-luizalabs_1 --network host -e MYSQL_ROOT_PASSWORD=root -d gustavocarvalhoti/luizalabs-db:3
+```
+
+##### Apontar para o Java do GraalVM
+
+![img.png](img.png)
+
+##### Iniciar a aplicação
+
+![img_1.png](img_1.png)
+
+##### Utilizei o Maven 3.6.3 para executar todos os comandos
+
+![img_3.png](img_3.png)
+
+##### Gerar a imagem compilada pelo Graal VM, fica muito mais rápido o start do servidor
+
+![img_2.png](img_2.png)
+
 
 <br>
 
